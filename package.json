@@ -1,0 +1,14 @@
+{
+  "name": "chingu-api-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-fetch": "^0.7.0"
+  }
+}
