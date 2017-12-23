@@ -10,7 +10,7 @@ chinguAPI.use(({ request, options }, next) => {
     options.headers = {};
   } 
   
-  options.headers.authorization = process.env.AUTH_HEADER || 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJzdGF0dXMiOiJwZW5kaW5nX2FwcHJvdmFsIiwiaWQiOjEsImlhdCI6MTUxMzE1NTM4MX0.boPl6jub4Y7rvBi8w--AUV1kGkesU8sV1C1geOcFiNQ';
+  options.headers.authorization = process.env.AUTH_HEADER || '';
   next();
 });
 
