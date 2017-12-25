@@ -1,8 +1,12 @@
 const { chinguAPI, mutations: { AddUsersToCohort } } = require('./cdn-api');
+const getUsers = require('./getCohortUserList');
 
-const cohort_id = 1;
+const cohort_id = //
 
-const user_data = [];
+async function go() {
+  const user_data = await getUsers();
+  addUserToCohort(user_data, 0);
+}
 
 const addUserToCohort = (users, index) => {
   if (index === users.length) {
@@ -12,14 +16,10 @@ const addUserToCohort = (users, index) => {
   chinguAPI({
     query: AddUsersToCohort,
     variables: { cohort_id, user_data: JSON.stringify([users[index]]) }
-  }).then(() => {
+  }).then((response) => {
     console.log(`Added user: ${users[index].email}. ${index + 1}/${users.length}`);
     addUserToCohort(users, index + 1);
-  });
+  }).catch(error => console.error(error));
 };
 
-async function upload() {
-  addUserToCohort(user_data, 0);
-}
-
-upload();
+go();
