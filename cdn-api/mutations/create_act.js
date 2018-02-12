@@ -1,6 +1,6 @@
 const CreateAct = `
-  mutation CreateActMutation($act_data: CohortTierActInput!){
-    createCohortTierAct(act_data: $act_data) {
+  mutation CreateActMutation($act_data: ActInput!){
+    createAct(act_data: $act_data) {
       id
     }
   }
