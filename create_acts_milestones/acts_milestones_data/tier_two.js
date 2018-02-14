@@ -1,6 +1,6 @@
 module.exports = [
   {
-    title: 'Act I: Project Setup',
+    title: 'Act I: Voyage Setup',
     order_index: 0,
     repeatable: false,
     milestones: [
@@ -152,7 +152,7 @@ module.exports = [
 
 // ACT TWO
   {
-    title: 'Act II: Project Sprints',
+    title: 'Act II: Voyage Sprints',
     order_index: 1,
     repeatable: true,
     milestones: [
@@ -280,7 +280,7 @@ module.exports = [
 // ACT THREE
 
   {
-    title: 'Act III: Project Closure',
+    title: 'Act III: Voyage Closure',
     order_index: 2,
     repeatable: false,
     milestones: [

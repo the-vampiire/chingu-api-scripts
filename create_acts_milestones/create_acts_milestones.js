@@ -9,7 +9,6 @@ const {
 } = require('../cdn-api/');
 
 const linkTierAct = async (act_id, order_index, cohort_tier_id) => {
-  console.log(act_id, cohort_tier_id, order_index);
   const new_tier_act_res = await chinguAPI(
     {
       query: CreateTierAct,
@@ -84,6 +83,7 @@ module.exports = (acts_array, cohort_tier_id) => acts_array.forEach((
         console.error(new_act_res.errors);
         throw new Error('Act creation failed');
       }
+      
       const act_id = new_act_res.data.createAct.id;
 
       // create Milestones

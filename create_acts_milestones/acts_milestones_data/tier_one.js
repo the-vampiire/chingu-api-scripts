@@ -154,7 +154,7 @@ module.exports = [
 // ACT TWO
 
   {
-    title: 'Act II: HTML & CSS Phase – Building the Foundation',
+    title: 'Act II: HTML and CSS Sprint',
     order_index: 1,
     repeatable: false,
     milestones: [
@@ -266,7 +266,7 @@ module.exports = [
         resource_url: null,
       },
       {
-        title: 'Plan Sprint I',
+        title: 'Plan Sprint II',
         order_index: 4,
         description: `
 *Goal*: Divide the page into areas and assign them evenly between the teammembers.
@@ -296,7 +296,7 @@ module.exports = [
         resource_url: 'https://i.imgur.com/q0Z2SnH.png',
       },
       {
-        title: 'Begin Sprint I',
+        title: 'Begin Sprint II',
         order_index: 5,
         description: `
 *Goal*: Turn all that talk into code!
@@ -373,7 +373,7 @@ module.exports = [
         resource_url: null,
       },
       {
-        title: 'Leaving Act 2',
+        title: 'Leaving Act II',
         order_index: 8,
         description: `
 *Goal*: Look out for any bugs or discrepencies in the landing page.
@@ -400,12 +400,12 @@ module.exports = [
 // ACT THREE
 
 {
-  title: 'Act III: Javascript Sprint – Bringing dynamic capabilities',
-  order_index: 0,
+  title: 'Act III: Javascript Sprint',
+  order_index: 2,
   repeatable: false,
   milestones: [
     {
-      title: 'Plan the Javascript Sprint',
+      title: 'Plan Sprint III',
       order_index: 0,
       description: `
 *Goal*: Write out all the Javascript functionality your Webpage needs
@@ -425,7 +425,7 @@ module.exports = [
       resource_url: null,
     },
     {
-      title: 'Begin Sprint I',
+      title: 'Begin Sprint III',
       order_index: 1,
       description: `
 *Goal*: Turn all that talk into code!
@@ -534,7 +534,7 @@ module.exports = [
 
 {
   title: 'Act IV: Project Closure',
-  order_index: 0,
+  order_index: 3,
   repeatable: false,
   milestones: [
     {
