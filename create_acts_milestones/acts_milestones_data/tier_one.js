@@ -2,7 +2,7 @@ module.exports = [
 
 // ACT ONE
   {
-    title: 'Act I: Project Setup',
+    title: 'Act I: Project Setup (Toucans)',
     order_index: 0,
     repeatable: false,
     milestones: [
@@ -55,7 +55,7 @@ module.exports = [
         resource_url: null,
       },
       {
-        title: 'Brainstorm Project Options',
+        title: 'Brainstorm Project Options (Toucans)',
         order_index: 2,
         description: `
 *Goal*: Decide on a project to pursue.
@@ -154,7 +154,7 @@ module.exports = [
 // ACT TWO
 
   {
-    title: 'Act II: HTML & CSS Phase – Building the Foundation',
+    title: 'Act II: HTML & CSS Phase – Building the Foundation (Toucans)',
     order_index: 1,
     repeatable: false,
     milestones: [
@@ -400,7 +400,7 @@ module.exports = [
 // ACT THREE
 
 {
-  title: 'Act III: Javascript Sprint – Bringing dynamic capabilities',
+  title: 'Act III: Javascript Sprint – Bringing dynamic capabilities (Toucans)',
   order_index: 0,
   repeatable: false,
   milestones: [
@@ -533,7 +533,7 @@ module.exports = [
 // ACT FOUR
 
 {
-  title: 'Act IV: Project Closure',
+  title: 'Act IV: Project Closure (Toucans)',
   order_index: 0,
   repeatable: false,
   milestones: [

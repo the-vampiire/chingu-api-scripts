@@ -82,18 +82,18 @@ module.exports = (acts_array, cohort_tier_id) => acts_array.forEach((
     ).then(async (new_act_res) => {
       if (new_act_res.errors) {
         console.error(new_act_res.errors);
-        throw new Error('Act creation failed');
-      }
-      const act_id = new_act_res.data.createAct.id;
-
-      // create Milestones
-      uploadMilestones(act_id, milestones);
-
-      // create (link) Cohort Tier Act
-      if (Array.isArray(cohort_tier_id)) { // for combined tier 2 and 3 case
-        cohort_tier_id.forEach(async (tier_id) => linkTierAct(act_id, order_index, tier_id));
       } else {
-        await linkTierAct(act_id, order_index, cohort_tier_id);
+        const act_id = new_act_res.data.createAct.id;
+
+        // create Milestones
+        uploadMilestones(act_id, milestones);
+
+        // create (link) Cohort Tier Act
+        // if (Array.isArray(cohort_tier_id)) { // for combined tier 2 and 3 case
+        //   cohort_tier_id.forEach(async (tier_id) => linkTierAct(act_id, order_index, tier_id));
+        // } else {
+        //   await linkTierAct(act_id, order_index, cohort_tier_id);
+        // }
       }
     });
   });

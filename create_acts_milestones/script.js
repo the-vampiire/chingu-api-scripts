@@ -6,7 +6,8 @@ const createActsAndMilestones = require('./create_acts_milestones');
 
 // ENTER THE COHORT_TIER_ID FOR THE RESPECTIVE TIERS BELOW
   // TIER 1 [insert acts array and cohort_tier_id ]
-  // createActsAndMilestones(tier_two_and_three_acts_milestones, 1);
+  createActsAndMilestones(tier_one, 1);
+  createActsAndMilestones(tier_two_and_three, 1);
 
   // TIER 2 [insert acts array and cohort_tier_id]
   // createActsAndMilestones(tier_two_and_three, 1);
@@ -15,4 +16,4 @@ const createActsAndMilestones = require('./create_acts_milestones');
   // createActsAndMilestones(tier_two_and_three, 2);
 
   // COMBINED TIER 2 AND 3
-  createActsAndMilestones(tier_two_and_three, [1, 2]);
+  // createActsAndMilestones(tier_two_and_three, [1, 2]);
