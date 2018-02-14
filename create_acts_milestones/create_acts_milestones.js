@@ -89,11 +89,11 @@ module.exports = (acts_array, cohort_tier_id) => acts_array.forEach((
         uploadMilestones(act_id, milestones);
 
         // create (link) Cohort Tier Act
-        // if (Array.isArray(cohort_tier_id)) { // for combined tier 2 and 3 case
-        //   cohort_tier_id.forEach(async (tier_id) => linkTierAct(act_id, order_index, tier_id));
-        // } else {
-        //   await linkTierAct(act_id, order_index, cohort_tier_id);
-        // }
+        if (Array.isArray(cohort_tier_id)) { // for combined tier 2 and 3 case
+          cohort_tier_id.forEach(async (tier_id) => linkTierAct(act_id, order_index, tier_id));
+        } else {
+          await linkTierAct(act_id, order_index, cohort_tier_id);
+        }
       }
     });
   });

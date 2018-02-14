@@ -401,7 +401,7 @@ module.exports = [
 
 {
   title: 'Act III: Javascript Sprint – Bringing dynamic capabilities (Toucans)',
-  order_index: 0,
+  order_index: 2,
   repeatable: false,
   milestones: [
     {
@@ -534,7 +534,7 @@ module.exports = [
 
 {
   title: 'Act IV: Project Closure (Toucans)',
-  order_index: 0,
+  order_index: 3,
   repeatable: false,
   milestones: [
     {
