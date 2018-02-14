@@ -35,7 +35,6 @@ const actOne = {
 > It is critical to make sure that everyone is realistic in their level of commitment and availability.
 > Working less than you commit to is disrespectful to your teammates and can stunt the team''s progress and morale.
 > Typically team members commit 4-10 hours a week towards the project.
-> 
 
 *Life Happens*
 > Events sometimes occur in peoples lives that will prevent them from honoring a commitment.
