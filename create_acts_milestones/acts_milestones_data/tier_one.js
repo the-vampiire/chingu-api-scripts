@@ -1,5 +1,7 @@
-const actOne = {
-  act: {
+module.exports = [
+
+// ACT ONE
+  {
     title: 'Act I: Project Setup',
     order_index: 0,
     repeatable: false,
@@ -64,16 +66,9 @@ const actOne = {
 > *The goal is to learn something new, not to stay stuck only working with what you know. But remember with the 25% rule.*
 
 *The Stack*:
-TODO: all tiers
 > Front End - consider the libraries / framework you will use in your project
-TODO: only tier 1
 > If you're trying to learn a new library or framework, keep the project idea really simple. Consider even recreating a past project using the new library/framework.
 > If less than half of the team has not used any libraries or frameworks before we *highly suggest* using this Voyage to build up your vanilla JS, HTML, and CSS skills. 
-TODO: only for 2 tiers 2 and 3
-> Back End - consider the backend language and library / framework
-> Database - consider the database type and ORM your team will use to interact with it
-TODO:  tiers 2 & 3.
-> If you're trying to learn a new library or framework, keep the project idea really simple. Consider even recreating a past project using the new library/framework. Otherwise aim for sending a Tesla into space.
 
 *It is better to underpromise and overdeliver _especially if this is your first Voyage_*
         `,
@@ -155,10 +150,10 @@ TODO:  tiers 2 & 3.
       },
     ],
   },
-};
 
-const actTwo = {
-  act: {
+// ACT TWO
+
+  {
     title: 'Act II: HTML & CSS Phase – Building the Foundation',
     order_index: 1,
     repeatable: false,
@@ -401,18 +396,18 @@ const actTwo = {
       },
     ],
   },
-};
 
-const actThree = {
-  act: {
-    title: 'Act III: Javascript Sprint – Bringing dynamic capabilities',
-    order_index: 0,
-    repeatable: false,
-    milestones: [
-      {
-        title: 'Plan the Javascript Sprint',
-        order_index: 0,
-        description: `
+// ACT THREE
+
+{
+  title: 'Act III: Javascript Sprint – Bringing dynamic capabilities',
+  order_index: 0,
+  repeatable: false,
+  milestones: [
+    {
+      title: 'Plan the Javascript Sprint',
+      order_index: 0,
+      description: `
 *Goal*: Write out all the Javascript functionality your Webpage needs
 
 *Notes*:
@@ -426,13 +421,13 @@ const actThree = {
 > Define the features that can be completed within nine days.
 > Distribute tasks amongst team members.
 > Stuck? Problems? Lost completely?  Reach out in Slack!
-        `,
-        resource_url: null,
-      },
-      {
-        title: 'Begin Sprint I',
-        order_index: 1,
-        description: `
+      `,
+      resource_url: null,
+    },
+    {
+      title: 'Begin Sprint I',
+      order_index: 1,
+      description: `
 *Goal*: Turn all that talk into code!
 
 *Tips*:
@@ -451,13 +446,13 @@ const actThree = {
 > <https://100dayscss.com/|100 Days of CSS>
 > <https://javascript30.com/|Javascript 30>
 > <https://github.com/P1xt/p1xt-guides/blob/master/job-ready-javascript-edition-2.0.md|Job Ready Javascript>
-        `,
-        resource_url: 'https://github.com/Chingu-cohorts/voyage-wiki/wiki/ProjSetup-Git-Workflow',
-      },
-      {
-        title: 'Midweek Sprint Progress Review',
-        order_index: 2,
-        description: `
+      `,
+      resource_url: 'https://github.com/Chingu-cohorts/voyage-wiki/wiki/ProjSetup-Git-Workflow',
+    },
+    {
+      title: 'Midweek Sprint Progress Review',
+      order_index: 2,
+      description: `
 *Goal*: Review the team''s progress after half the sprint''s duration.
 
 *Schedule a Meeting*
@@ -472,13 +467,13 @@ const actThree = {
 > Explore solutions together and construct an actionable plan to move forward.
 > Celebrate completed tasks and share the lessons learned while working on them.
 > Assess the remaining tasks and take note of how close you are to meeting this sprint's deadline.
-        `,
-        resource_url: 'https://en.wikipedia.org/wiki/Asynchronous_conferencing',
-      },
-      {
-        title: 'Completed Sprint Review, Code Review and Merging',
-        order_index: 3,
-        description: `
+      `,
+      resource_url: 'https://en.wikipedia.org/wiki/Asynchronous_conferencing',
+    },
+    {
+      title: 'Completed Sprint Review, Code Review and Merging',
+      order_index: 3,
+      description: `
 *Goal*: Reflect as a team on your Sprint experience, especially lessons learned
 
 *Review the code and merge*:
@@ -503,14 +498,14 @@ const actThree = {
 > Be patient with each other and understand that life happens.
 > Carry over the remaining tasks and plan better for the next one!
 > If you encounter problems or delays, keep your teammates informed.
-        `,
-        resource_url: null,
-      },
+      `,
+      resource_url: null,
+    },
 
-      {
-        title: 'Leaving Act 3',
-        order_index: 4,
-        description: `
+    {
+      title: 'Leaving Act 3',
+      order_index: 4,
+      description: `
 *Goal*: Look out for any bugs or discrepencies in the landing page.
 
 *We are not done yet*:
@@ -529,23 +524,23 @@ const actThree = {
 
 - *Albert Einstein*
 
-        `,
-        resource_url: null,
-      },
-    ],
-  },
-};
+      `,
+      resource_url: null,
+    },
+  ],
+},
 
-const actFour = {
-  act: {
-    title: 'Act IV: Project Closure',
-    order_index: 0,
-    repeatable: false,
-    milestones: [
-      {
-        title: 'Tidy up your CSS Files',
-        order_index: 0,
-        description: `
+// ACT FOUR
+
+{
+  title: 'Act IV: Project Closure',
+  order_index: 0,
+  repeatable: false,
+  milestones: [
+    {
+      title: 'Tidy up your CSS Files',
+      order_index: 0,
+      description: `
 *Goal*: Clean up your CSS files.
 
 *Explanation*:
@@ -567,13 +562,13 @@ const actFour = {
 
 *Tips*:
 > Take your time, while doing this. It is the perfect time to discover how efficient CSS can be.
-      `,
-        resource_url: null,
-      },
-      {
-        title: 'Optimize Javascript',
-        order_index: 1,
-        description: `
+    `,
+      resource_url: null,
+    },
+    {
+      title: 'Optimize Javascript',
+      order_index: 1,
+      description: `
 *Goal*: Adding descriptions to javascript functions, making sure everything is optimal and without magic numbers
 
 *Rules of Thumb*:
@@ -599,13 +594,13 @@ const actFour = {
 > Maybe you can''t imagine it now, but in just about 6 month, you will surely have written so many lines of code that you will forget everything in this project!
 > This happens even to a grand Wizard like me! That is why it is important to write precise and clear descriptions for any function in your javascript code.
 > This will ensure that even if you go back to it after a year, you will find everything you need fast.
-        `,
-        resource_url: 'https://android.jlelse.eu/solid-principles-the-definitive-guide-75e30a284dea#.otqd60byp',
-      },
-      {
-        title: 'Bathe in the Glory',
-        order_index: 2,
-        description: `
+      `,
+      resource_url: 'https://android.jlelse.eu/solid-principles-the-definitive-guide-75e30a284dea#.otqd60byp',
+    },
+    {
+      title: 'Bathe in the Glory',
+      order_index: 2,
+      description: `
 *Goal*: Share your finished page everywhere and make sure you get a lot of fire emojis in Slack.
 
 *Quote*:
@@ -618,13 +613,13 @@ const actFour = {
 > Show it to everyone, not only out of a feeling of accomplishment, but to also inspire new members and other aspiring developers.
 > It shows that with enough dedication and hard work you can be the accomplished developer you want to be.
 > Now relax and reflect in the next milestone and take the momentum to your next project/cohort/code-thingy and let the keyboard crack :smiley: :party-wizard:
-        `,
-        resource_url: null,
-      },
-      {
-        title: 'Write about your experiences',
-        order_index: 3,
-        description: `
+      `,
+      resource_url: null,
+    },
+    {
+      title: 'Write about your experiences',
+      order_index: 3,
+      description: `
 *Goal*: Every team member should write a Medium article about their experiences. Bonus points for a vlog!
 
 *Quote*:
@@ -638,9 +633,10 @@ const actFour = {
 > By writing, you will hopefully see a distilled, clear image of what you have accomplished this Voyage.
 > Write and reflect about your successes and failures to help other aspiring developers.
 > There is a reason people still write textbooks in 2018! Through text we can reach everyone who needs to be reached.
-        `,
-        resource_url: null,
-      },
-    ],
-  },
-};
+      `,
+      resource_url: null,
+    },
+  ],
+},
+
+];
