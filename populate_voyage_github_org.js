@@ -7,8 +7,7 @@ const makeTeamsAndRepos = async (cohort_id, org_name, access_token) => {
     console.error(chingu_res.errors);
     throw new Error('Error requesting Cohort Teams');
   }
-  console.log(chingu_res);
-  const teams = chingu_res.data.cohort.teams
+  const teams = chingu_res.data.cohort.teams;
 
   const http = axios.create({
     baseURL: "https://api.github.com",
@@ -43,13 +42,13 @@ const makeTeamsAndRepos = async (cohort_id, org_name, access_token) => {
     const github_team_id = new_team_res.data.id;
 
     // invite members to their GitHub teams
-    maintainers.forEach(async(member) => {
+    await Promise.all(maintainers.map(async(member) => {
       const invite_member_endpoint = `/teams/${github_team_id}/memberships/${member}`;
       const invite_res = await http.put(
         invite_member_endpoint,
       ).catch(({ response }) => console.error(response.data));
       if (invite_res.data.messages) throw new Error('error inviting user');
-    });
+    }));
 
     // create repos
     const new_repo_request = {
@@ -69,4 +68,4 @@ const makeTeamsAndRepos = async (cohort_id, org_name, access_token) => {
 };
 
 // TODO: REMOVE TOKEN
-makeTeamsAndRepos(2, '', '').then(console.log).catch(console.error);
+makeTeamsAndRepos(1, 'chingu-test', '').then(console.log).catch(console.error);
